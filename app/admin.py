@@ -1,5 +1,4 @@
 from flask import Blueprint, render_template, abort, request, redirect
-
 from app import app
 from models import Tag, Category, Item
 
