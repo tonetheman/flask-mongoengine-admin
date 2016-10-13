@@ -2,12 +2,10 @@ var app = angular.module('fma', [
   'ngRoute'
 ]);
 
-app.config(['$interpolateProvider', '$locationProvider', function ($interpolateProvider, $locationProvider) {
+app.config(['$interpolateProvider', function ($interpolateProvider) {
   $interpolateProvider.startSymbol('[[');
   $interpolateProvider.endSymbol(']]');
-
-  $locationProvider.html5Mode({
-    enabled: true
-  });
-
 }]);
+
+
+app.controller('BaseController', function($scope){});
